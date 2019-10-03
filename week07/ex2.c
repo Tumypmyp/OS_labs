@@ -1,15 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main (){
-	int N;
-	scanf("%d", &N);
-	int *array = malloc(N * sizeof(int));
-	for (int i = 0; i < N; ++i) {
-		array[i] = i;
-		printf("%d ", array[i]);
+int main() {
+	size_t N = 10 * (1 << 20);
+	int *array;
+	for (int i = 0; i < 10; i++) {
+		array = malloc(N);
+		memset(array, 0, N);
+		sleep(1);
 	}
-	printf("\n");
-	free(array);
 	return 0;
 }
