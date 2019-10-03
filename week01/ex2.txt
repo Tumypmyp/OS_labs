@@ -1,0 +1,378 @@
+    1  speedtest
+    2  ping 127.0.0.1
+    3  speedtest
+    4  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+    5  sudo apt-get install apt-transport-https
+    6  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+    7  sudo apt-get update
+    8  sudo apt-get install sublime-text
+    9  sudo apt-get update
+   10  ping 127.0.0.1
+   11  sudo apt-get install sublime-text
+   12  sudo snap install sublime-text
+   13  sudo snap install sublime-text --classic
+   14  sudo touch 99_default_ttl.conf
+   15  sudo gedit 99_default_ttl.conf 
+   16  sudo nano 99_default_ttl.conf 
+   17  sudo sysctl --system
+   18  ping 127.0.0.1
+   19  speedtest
+   20  sudo apt install speedtest-cli 
+   21  cd ~
+   22  speedtest
+   23  snap install spotify
+   24  sudo snap install telegram-desktop
+   25  sudo snap install intellij-idea-ultimate --classic
+   26  sudo snap -help
+   27  snap
+   28  snap info
+   29  snap info simplenote
+   30  sudo snap install simple mote
+   31  sudo snap install simplenote
+   32  ping 127.0.0.1
+   33  sudo snap sublime-text
+   34  sudo snap sublime-text --classic
+   35  sudo snap sublime-text --clasic
+   36  sudo snap install sublime-text
+   37  sudo snap install sublime-text --classic
+   38  sudo snap install intellij-idea-ultimate --classic
+   39  speedtest
+   40  ping 127.0.0.1
+   41  speedtest
+   42  ping 127.0.0.1
+   43  speedtest
+   44  [A
+   45  speedtest
+   46  $ sudo gedit /usr/share/gnome-shell/theme/ubuntu.css
+   47  sudo gedit /usr/share/gnome-shell/theme/ubuntu.css
+   48  ping 127.0.0.1
+   49  speedtest
+   50  ping 127.0.0.1
+   51  telegram
+   52  /opt/telegram/Telegram 
+   53  snap/telegram-desktop/
+   54  /snap/bin/telegram-desktop 
+   55  snap list
+   56  /usr/bin/firefox 
+   57  telegram-desktop 
+   58  snap run telegram-desktop
+   59  snap info telegram-desktop
+   60  snap telegram-desktop
+   61  snap help
+   62  snap run --help
+   63  snap run telegram-desktop
+   64  snap run telegram-desktop --help
+   65  snap version
+   66  snap list
+   67  snap/bin/telegram-desktop
+   68  snap/bin/spotify
+   69  snap/bin/spotify
+   70  snap run spotify
+   71  snap run telegram-desktop
+   72  snap run spotify
+   73  spotify
+   74  speedtest
+   75  git clone https://github.com/BlackDex/mpris-control.git 
+   76  sudo apt install git
+   77  git clone https://github.com/BlackDex/mpris-control.git 
+   78  cd mpris-control/
+   79  cd src/
+   80  ./main.rs 
+   81  apt install libdbus-1-dev
+   82  sudo apt install libdbus-1-dev
+   83  ./main.rs 
+   84  mpris-control 0.3.1
+   85  mpris-control
+   86  make
+   87  snap help
+   88  snap remove spotify 
+   89  snap install spotify
+   90  speedtest
+   91  curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -
+   92  sido apt install curl
+   93  sido apt-get install curl
+   94  sudo apt-get install curl
+   95  ping 127.0.0.1
+   96  speedtest
+   97  snap remove spotify 
+   98  curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -
+   99  echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+  100  sudo apt-get update && sudo apt-get install spotify-client
+  101  snap list
+  102  sudo apt remove spotify-client 
+  103  snap install spotify
+  104  snap help
+  105  snap find
+  106  snap install skype
+  107  snap install skype --classic
+  108  snap list
+  109  snap remove instagraph 
+  110  snap help
+  111  snap help run
+  112  spotify
+  113  spotify-client
+  114  sudo apt-get update
+  115  sudo snap install intellij-idea-ultimate --classic
+  116  snap refresh
+  117  snap list
+  118  sudo snap install clion --classic
+  119  snap install instagraph
+  120  snap install minuet 
+  121  sudo spotify
+  122  spotify
+  123  sudo apt-get install libatk-adaptor libgail-common
+  124  sudo snap refresh --stable spotify
+  125  sudo snap refresh --revision=1 spotify
+  126  spotify
+  127  sudo spoyify
+  128  sudo spotify
+  129  spotify $
+  130  spotify &
+  131  snap run help
+  132  snap help run
+  133  snap run
+  134  snap run spotify
+  135  telegram-desktop 
+  136  ping 127.0.0.1
+  137  speedtest
+  138  [A
+  139  speedtest
+  140  snap
+  141  snap list
+  142  snap refresh
+  143  snap list
+  144  snap
+  145  sudo snap refresh --list
+  146  snap 
+  147  snap changes
+  148  snap info
+  149  snap list
+  150  speedtest
+  151  size
+  152  size 
+  153  cat ex1.txt
+  154  touch ex1.txt
+  155  clear
+  156  size ex1.txt
+  157  size ex1.c
+  158  size ex1.txt
+  159  size ex1.c
+  160  clear
+  161  size ex1.c
+  162  gcc ex2.c -o ex2
+  163  ex2
+  164  .ex2
+  165  gcc ex2.c -o ex2
+  166  /.ex2
+  167  ./ex2
+  168  size ex.c
+  169  size ex
+  170  size /ex
+  171  /.ex2
+  172  ./ex2
+  173  speedtest
+  174  size ex2
+  175  size ex2 >> ex1.txt
+  176  s1.sh
+  177  ./sh1
+  178  ./sh1.sh
+  179  /sh1.sh
+  180  ./ex1.sh
+  181  ex1.sh
+  182  sh ex1.sh
+  183  ./ex1.sh
+  184  sh ex1.sh
+  185  ./ex1.sh
+  186  sh ex1.sh
+  187  gcc ex3.c -o ex3
+  188  ./ex3
+  189  speedtest
+  190  gcc ex4.c -o ex4
+  191  ./ex
+  192  gcc ex5.c -o ex5
+  193  ./ex5
+  194  gcc ex5.c -o ex5
+  195  ./ex5
+  196  gcc ex5.c -o ex5
+  197  ./ex5
+  198  git init
+  199  git 
+  200  git status
+  201  git add *.c
+  202  git add /*/*.c
+  203  git add week07/*.c
+  204  git add week07/*.txt
+  205  git add week07/*.sh
+  206  git add week07/*.c
+  207  git add week07/*.sh
+  208  git commit -m "init"
+  209  git config --global user.email "gaynoullin@gmail.com"
+  210  git config --global user.name "Tumypmyp"
+  211  git commit -m "init"
+  212  git remote add origin https://github.com/Tumypmyp/OS_labs.git
+  213  git push -u origin master
+  214  git 
+  215  git push
+  216  git status
+  217  git info
+  218  git
+  219  git diff
+  220  sh ex1.sh
+  221  cd week07/
+  222  sh ex1.sh 
+  223  git log
+  224  git status 
+  225  git log
+  226  git info
+  227  git log
+  228  gcc ex2.c -o ex2.o
+  229  ./ex2.o
+  230  gcc ex3.c -o ex3.o
+  231  gcc ex4.c -o ex4.o
+  232  gcc ex5.c -o ex5.o
+  233  cd ..
+  234  git status
+  235  git add .gitignore 
+  236  cd Рабочий\ стол/
+  237  cd OS_lab/
+  238  git status
+  239  mkdir week06
+  240  mkdir week05
+  241  mkdir week04
+  242  mkdir week03
+  243  mkdir week02
+  244  mkdir week01
+  245  git status
+  246  cd week07
+  247  gcc ex5.c
+  248  gcc ex5.c -c
+  249  git status
+  250  git add ex1.txt 
+  251  git status
+  252  git add ../.gitignore 
+  253  cd ..
+  254  git commit -m "init"
+  255  git push
+  256  git status
+  257  git log
+  258  git
+  259  git pull
+  260  git status
+  261  git log
+  262  cd ..
+  263  git add week0
+  264  git add week0/
+  265  whoami
+  266  hostname
+  267  man
+  268  man manual
+  269  man <manual>
+  270  man
+  271  man 
+  272  man whoami
+  273  man man
+  274  man --help
+  275  less
+  276  man man head
+  277  ma head
+  278  man head
+  279  man -h |head
+  280  grep "--def" man -h
+  281  grep --def man -h
+  282  ls | sort -r | tail -n 3
+  283  pwd
+  284  ls
+  285  cat README.md 
+  286  speedtest
+  287  ощиы
+  288  jobs
+  289  speedtest
+  290  jobs
+  291  fg%1
+  292  fg %1
+  293  speedtest
+  294  jobs
+  295  cd week1
+  296  cd week01
+  297  ls ~/usr/bin/gcc | sort -r > ex1.txt
+  298  ls ~/usr/bin | grep "gcc" | sort -r > ex1.txt
+  299  ls /usr/bin | grep "gcc" | sort -r > ex1.txt
+  300  cat ex1.txt 
+  301  git status
+  302  cd ..
+  303  git status
+  304  git add week01
+  305  git status
+  306  git pull &
+  307  fg %1
+  308  git pull &
+  309  jobs
+  310  gedit &
+  311  jobs
+  312  gedit
+  313  gedit &
+  314  jobs
+  315  gedit &
+  316  jobs
+  317  fg %1
+  318  jobs
+  319  rm week02
+  320  rm -r week02
+  321  ls
+  322  ls .
+  323  ls ..
+  324  ls ../..
+  325  mrdir week02
+  326  mkdir week02
+  327  git status
+  328  ls | sort -r
+  329  ls | sort 
+  330  ls | sort | tail 3
+  331  ls | sort | tail -n 3
+  332  ls | sort | tail -n 5
+  333  ls | sort | tail -n 13
+  334  history
+  335  history > ex2.txt
+  336  cat ex2.txt 
+  337  mv ex2.txt week01/ex2.txt
+  338  ls
+  339  cd week01
+  340  list
+  341  ls
+  342  cat ex2
+  343  cat ex2.txt 
+  344  date
+  345  sleep 3
+  346  sh ex3.sh 
+  347  date | sleep 3 | date
+  348  date | sleep 3  date
+  349  date | sleep 3 | date
+  350  sh ex3.sh 
+  351  ./ex3.sh
+  352  sudo ./ex3.sh
+  353  sh ex3.sh 
+  354  jobs
+  355  sh ex3.sh 
+  356  jobs
+  357  sh ex3.sh 
+  358  jobs
+  359  bg %1
+  360  gedit /week01/main.c
+  361  gedit ~/week01/main.c
+  362  gcc main.c -o ex4
+  363  ./ex4 
+  364  gcc main.c -o ex4
+  365  ./ex4 
+  366  cd ../week07
+  367  gcc ex1.c -o ex1
+  368  gcc ex2.c -o ex2
+  369  gcc ex3.c -o ex3
+  370  gcc ex4.c -o ex4
+  371  gcc ex5.c -o ex5
+  372  git status
+  373  git add ../week01/
+  374  git status
+  375  cd ../week01
+  376  history
+  377  rm ex2.txt 
+  378  history >ex2.txt
