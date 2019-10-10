@@ -1,0 +1,9 @@
+# Physical memory
+- Faster
+- Limited by the size of RAM because physicaly placed in RAM
+- Can directly access the CPU
+
+# Virtual memory
+- Slower because of extra operations
+- Limited by the size of hard disk
+- Can not directly access the CPU

@@ -1,0 +1,5 @@
+We have (1 << 16) bytes of virtual memory
+Every page of memory have 8 * (1 << 10) bytes
+So (1 << 16) / (1 << 13) = 8 pages
+
+Answer is 8
