@@ -1,40 +1,54 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 struct page_frame{
 	unsigned char prior;
 	int page_id;
-} default_page_frame = {0, -1};
+	bool ref;
+} default_page_frame = {0, -1, 0};
 
+// Update array with default values
 void init_default_aray(struct page_frame *res, int size) {
 	for (int i = 0; i < size; ++i)
 		res[i] = default_page_frame;
 }
 
-void referenced(struct page_frame *p) {
-	p->prior = (1 << 8) | (p->prior >> 1);
+// Update prior by ref bit
+void update(struct page_frame *p) {
+	p->prior = (p->ref << 8) | (p->prior >> 1);
 }
 
+// Return true if page frame is not used
+bool is_empty(struct page_frame *p) {
+	return p->page_id == default_page_frame.page_id
+		&& p->prior == default_page_frame.prior
+		&& p->ref == default_page_frame.ref;
+}
+
+// Replace old page by new one
 void put_page(struct page_frame *p, int frame_id) {
 	p->page_id = frame_id;
 	p->prior = 0;
-	referenced(p);
+	p->ref = 1;
 }
 
-void next_page_check(int frame_id, struct page_frame *pages, int pSize, int *nmiss, int *nhit) {
-	// Checking for hit
+void push_next_page(int frame_id, struct page_frame *pages, int pSize, int *nmiss, int *nhit) {
+	// Checking if it's hit case
 	for (int i = 0; i < pSize; ++i)
 		if (pages[i].page_id == frame_id) {
-			referenced(&pages[i]);
+			pages[i].ref = 1;
 			++(*nhit);
 			return;
 		}
 
-	// Miss case
+	// Miss case otherwise
 	++(*nmiss);
+
+	// Find not used page
 	for (int i = 0; i < pSize; ++i)
-		if (pages[i].page_id == default_page_frame.page_id) {
+		if (is_empty(&pages[i])) {
 			put_page(&pages[i], frame_id);
 			return;
 		}
@@ -44,7 +58,15 @@ void next_page_check(int frame_id, struct page_frame *pages, int pSize, int *nmi
 	for (int i = 0; i < pSize; ++i)
 		if (pages[i].prior < pages[min_ind].prior)
 			min_ind = i;
+
+	// Replace with new page
 	put_page(&pages[min_ind], frame_id);
+}
+
+void simulate_next_tick(struct page_frame *pages, int pSize) {
+	for (int i = 0; i < pSize; ++i)
+		if (pages[i].ref)
+			update(&pages[i]);
 }
 
 int main(int argc, char *argv[]) {
@@ -77,11 +99,11 @@ int main(int argc, char *argv[]) {
 	fscanf(file, "%d", &id);
 	while (!feof(file)) {
 		// printf("%d\n", id);
-		next_page_check(id, pages, pSize, &nmiss, &nhit);
+		push_next_page(id, pages, pSize, &nmiss, &nhit);
+		simulate_next_tick(pages, pSize);
 		fscanf(file, "%d", &id);
 	}
 	fclose (file);
-
 
 	printf("Hit: %d, Miss: %d\n", nhit, nmiss);
 	printf("Hit/Miss: %f\n", (double)nhit / nmiss);
