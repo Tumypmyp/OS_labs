@@ -1,0 +1,8 @@
+- To increase Hit/Miss ratio there should be less Miss cases and more Hit cases.
+If we will referense same page but multiple times, the ratio will be N - 1 : 1.
+Example in "large_hit_miss_ratio.txt"
+
+- To decrease this ratio there should be more Miss cases.
+For that we can referense pages that wasn't referensed before.
+That way every the ratio will be 0 : N.
+Example in "small_hit_miss_ratio.txt"
