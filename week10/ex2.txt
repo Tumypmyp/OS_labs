@@ -1,0 +1,35 @@
+
+~$ cd Рабочий\ стол/OS_lab/
+	mkdir week10
+	cd week10/
+	touch _ex1.txt
+	ls -i _ex1.txt 
+918676 _ex1.txt
+	ls -li _ex1.txt 
+918676 -rw-r--r-- 1 tumypmyp tumypmyp 0 окт 23 14:25 _ex1.txt
+	ln _ex1.txt _ex1_1.txt 
+	ln _ex1.txt _ex1_2.txt 
+	ls -i _ex1.txt 
+918676 _ex1.txt
+	ls -i _ex1_1.txt 
+918676 _ex1_1.txt
+	ls -i _ex1_2.txt 
+918676 _ex1_2.txt
+	ls -i _ex1.txt | ls -i _ex1_1.txt | ls -i _ex1_2.txt >> ex1.txt
+	ls -i _ex1.txt >> ex1.txt
+	ls -i _ex1_1.txt >> ex1.txt
+	ls -i _ex1_2.txt >> ex1.txt
+	touch ../week01/file.txt
+	link ../week01/file.txt _ex2.txt
+	ls -i _ex2.txt
+524530 _ex2.txt
+	find ../week01/file.txt -inum 524530
+../week01/file.txt
+	man find
+	find ../week01/ -inum 524530
+../week01/file.txt
+	find ../ -inum 524530
+../week10/_ex2.txt
+../week01/file.txt
+	find ../ -inum 524530 -exec rm {} \;
+	
