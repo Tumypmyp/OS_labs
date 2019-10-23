@@ -9,12 +9,18 @@
 	chmod g=--- _ex3.txt 
 	ls -l _ex3.txt 
 -rwx---rwx 1 tumypmyp tumypmyp 0 окт 23 15:05 _ex3.txt
+
 	chmod 660 _ex3.txt
 	ls -l _ex3.txt 
 -rw-rw---- 1 tumypmyp tumypmyp 0 окт 23 15:05 _ex3.txt
+# As we see 660 gave rw permissions only to owner and group 
+
 	chmod 775 _ex3.txt
 	ls -l _ex3.txt 
 -rwxrwxr-x 1 tumypmyp tumypmyp 0 окт 23 15:05 _ex3.txt
+# 660 gave all permissions to owner and group but only rx to others
+
 	chmod 777 _ex3.txt
 	ls -l _ex3.txt 
 -rwxrwxrwx 1 tumypmyp tumypmyp 0 окт 23 15:05 _ex3.txt
+# 777 gave all permissions to everyone
