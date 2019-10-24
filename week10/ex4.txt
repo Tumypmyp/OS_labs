@@ -1,0 +1,4 @@
+Name: "file1", i-node: 918701
+Name: "link1", i-node: 918701
+Name: "..", i-node: 918580
+Name: ".", i-node: 918522
