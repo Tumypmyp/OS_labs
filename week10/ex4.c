@@ -18,7 +18,6 @@ int comp(const void* p, const void* q) {
 	return ((Pair*)p)->i < ((Pair*)q)->i; 
 }
 
-
 int main(int argc, char *argv[]) {
 	char dir_name[] = "tmp";
 	if (argc >= 2)
@@ -34,19 +33,19 @@ int main(int argc, char *argv[]) {
 	struct stat stats;
 
 	while ((entry = readdir(dir)) != NULL) {
-		// make path to the file
+		// Make path to the file
 		char path[128];
 		strcpy(path, dir_name);
 		strcat(path, "/");
 		strcat(path, entry->d_name);
 
-		// make stat structure
+		// Make stat structure
 		if (stat(path, &stats) < 0) {
 			perror("stat failed");
 			return 1;
 		}
-		
-			// add to array
+
+		// Add to array
 		if (stats.st_nlink > 1) {
 			strcpy(files[len].s, entry->d_name);
 			files[len].i = entry->d_ino;
@@ -54,7 +53,7 @@ int main(int argc, char *argv[]) {
 		}
 	}
 	
-	//sort array
+	// Sort array
 	qsort(files, len, sizeof(Pair), comp);
 	for (int i = 0; i < len; ++i) 
 		printf("Name: \"%s\", i-node: %ld\n", files[i].s, files[i].i);
